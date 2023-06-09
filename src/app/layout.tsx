@@ -1,7 +1,11 @@
+import Header from '@/components/Header';
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Open_Sans } from 'next/font/google';
+import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] })
+const OpenSans = Open_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,8 +18,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className={OpenSans.className}>
+      <body className='relative flex flex-col items-center'>
+        <Header />
+        <main className="grow mt-16 max-w-7xl px-6">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
