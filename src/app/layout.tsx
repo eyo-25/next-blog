@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='en' className={OpenSans.className}>
       <body className='relative flex flex-col items-center'>
         <Header />
-        <main className="grow mt-16 max-w-7xl px-6">
+        <main className="grow mt-16 w-full max-w-7xl px-6 mx-auto">
           {children}
         </main>
         <Footer />

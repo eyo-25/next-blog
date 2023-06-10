@@ -13,8 +13,8 @@ export default function PostCard({ data }: PostCardProps){
                 className="h-52"
                 src={`https://images.unsplash.com${data.image}`}
                 alt={data.title}
-                width={300}
-                height={200}
+                width={400}
+                height={400}
             />
             <div className="flex flex-col items-center text-center p-4">
                 <time className="self-end text-zinc-400 mb-2">{data.date.toString()}</time>
