@@ -1,6 +1,5 @@
 import { getFeaturedPosts } from "@/service/posts";
-import PostCard from "./PostCard";
-import PostsGrids from "./PostsGrids";
+import PostsGrids from "../../../components/PostsGrids";
 
 export default async function PostBoard(){
     const featuredPosts = await getFeaturedPosts();

@@ -1,11 +1,12 @@
-export default function PostsPage(){
-    const categories = ["All Posts", "location", "traditional", "food"]
+import CategoryBoard from "@/app/posts/components/CategoryBoard";
+import { getPosts } from "@/service/posts"
+
+export default async function PostsPage(){
+    const posts = await getPosts();
+    const allCategories = new Set(posts.reduce((acc : string[], cu)=> [...acc, ...cu.categories], []))
+    const categories = ["All Posts", ...allCategories]
 
     return (
-        <div>
-            <ul>
-                {categories.map(category => <li key={category}>{category}</li>)}
-            </ul>
-        </div>
+        <CategoryBoard posts={posts} categories={categories} />
     )
 }

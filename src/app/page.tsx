@@ -1,6 +1,6 @@
-import PostBoard from "@/components/PostBoard";
-import Profile from "@/components/Profile"
-import CarouselBoard from "@/components/CarouselBoard";
+import PostBoard from "@/app/home/components/PostBoard";
+import Profile from "@/app/home/components/Profile"
+import CarouselBoard from "@/app/home/components/CarouselBoard";
 
 export default async function Home() {
   return (

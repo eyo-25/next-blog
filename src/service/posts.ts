@@ -7,14 +7,28 @@ export type Post = {
     desc: string,
     date: string,
     categories: string[],
-    image: string,
-    featured: boolean
+    path: string,
+    featured: boolean,
+    textfile: string
 }
 
 export async function getPosts(): Promise<Post[]> {
     const filePath = path.join(process.cwd(), 'data','posts.json');
     const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data);
+}
+
+export type PostData = Post & { content: string }
+
+export async function getPostData(postId:string): Promise<PostData> {
+    const post = await getPosts()
+        .then((posts)=> posts.find((post)=> post.id === postId));
+
+    if(!post) throw new Error(`${postId}가 존재하지 않습니다`);
+
+    const filePath = path.join(process.cwd(), 'data','posts', `${post.textfile}.md`);
+    const content = await fs.readFile(filePath, 'utf-8');
+    return {...post, content}
 }
 
 export async function getFeaturedPosts(): Promise<Post[]> {
@@ -27,7 +41,10 @@ export async function getNotFeaturedPosts(): Promise<Post[]> {
     return posts.filter((post)=>!post.featured);
 }
 
-export async function getPost(id:string): Promise<Post | undefined> {
+export async function getCategoryPosts(category : string): Promise<Post[]> {
     const posts = await getPosts();
-    return posts.find(item => item.id === id);
+    if(category === "All Posts") {
+        return posts;
+    }
+    return posts.filter(({categories})=>categories.includes(category));
 }

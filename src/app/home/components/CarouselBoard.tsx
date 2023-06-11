@@ -1,6 +1,6 @@
 import { getNotFeaturedPosts } from "@/service/posts";
 import MultiCarousel from "./MultiCarousel";
-import PostCard from "./PostCard";
+import PostCard from "../../../components/PostCard";
 
 export default async function CarouselBoard(){
     const notFeaturedPosts = await getNotFeaturedPosts();

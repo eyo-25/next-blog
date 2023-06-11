@@ -8,10 +8,10 @@ interface PostCardProps {
 
 export default function PostCard({ data }: PostCardProps){
     return (
-        <article className="rounded-md overflow-hidden shadow-lg">
+        <Link href={`/posts/${data.id}`} className="rounded-md overflow-hidden shadow-lg">
             <Image
                 className="h-52"
-                src={`https://images.unsplash.com${data.image}`}
+                src={`https://images.unsplash.com${data.path}`}
                 alt={data.title}
                 width={400}
                 height={400}
@@ -26,6 +26,6 @@ export default function PostCard({ data }: PostCardProps){
                     ))}
                 </ul>
             </div>
-        </article>
+        </Link>
     )
 }

@@ -4,18 +4,10 @@
         "title": "여보세요 나야",
         "desc": "이렇게 취할 때면 꺼져 버린",
         "date": "2022-12-31",
-        "categories": ["drink"],
-        "image": "/photo-1528615141309-53f2564d3be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": true
-    },
-    {
-        "id": "2",
-        "title": "문이 열리나요",
-        "desc": "문이 열리네요, 그대가 들어오죠",
-        "date": "2023-02-22",
-        "categories": ["location", "traditional"],
-        "image": "/photo-1564347534838-cbefbe31afde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": true
+        "categories": ["food"],
+        "path": "/photo-1528615141309-53f2564d3be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": true,
+        "textfile": "review-2023"
     },
     {
         "id": "3",
@@ -23,8 +15,9 @@
         "desc": "The Land of the Morning Calm",
         "date": "2010-10-05",
         "categories": ["location", "traditional"],
-        "image": "/photo-1485186667901-c039c19ecac3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": false
+        "path": "/photo-1485186667901-c039c19ecac3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "textfile": "best-react-practices"
     },
     {
         "id": "4",
@@ -32,8 +25,9 @@
         "desc": "즥이네 즥이네 즥이네",
         "date": "2023-12-31",
         "categories": ["food"],
-        "image": "/photo-1580651315530-69c8e0026377?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": true
+        "path": "/photo-1580651315530-69c8e0026377?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": true,
+        "textfile": "javascript-basic"
     },
     {
         "id": "5",
@@ -41,8 +35,9 @@
         "desc": "새벽 공기 속에 흔들리는 네온",
         "date": "2002-02-05",
         "categories": ["location"],
-        "image": "/photo-1597552571860-136a103d5eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": false
+        "path": "/photo-1597552571860-136a103d5eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "textfile": "node-basic"
     },
     {
         "id": "6",
@@ -50,8 +45,9 @@
         "desc": "또 가고 싶다..",
         "date": "2022-12-10",
         "categories": ["location"],
-        "image": "/photo-1590437084089-9f5ae1500176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": false
+        "path": "/photo-1590437084089-9f5ae1500176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": false,
+        "textfile": "node-pro-tips"
     },
     {
         "id": "7",
@@ -59,8 +55,9 @@
         "desc": "잘 말아줘",
         "date": "2002-09-05",
         "categories": ["food"],
-        "image": "/photo-1532347231146-80afc9e3df2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured": true
+        "path": "/photo-1532347231146-80afc9e3df2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "featured": true,
+        "textfile": "react18-walkthrough"
     },
     {
         "id": "8",
@@ -68,8 +65,9 @@
         "desc": "출출한데 한끼 가보자이~",
         "date": "2033-02-03",
         "categories": ["food"],
-        "image": "/photo-1575932444877-5106bee2a599?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
-        "featured": false
+        "path": "/photo-1575932444877-5106bee2a599?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+        "featured": false,
+        "textfile": "review-2021"
     },
     {
         "id": "9",
@@ -77,17 +75,19 @@
         "desc": "ㅈㄴ 비벼! 막 비벼",
         "date": "2033-02-03",
         "categories": ["food", "traditional"],
-        "image": "/photo-1600289031464-74d374b64991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1375&q=80",
-        "featured": false
+        "path": "/photo-1600289031464-74d374b64991?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1375&q=80",
+        "featured": false,
+        "textfile": "review-2022"
     },
     {
         "id": "10",
         "title": "사물놀이",
         "desc": "자 신나게 놀아 보자~",
         "date": "2033-02-03",
-        "categories": ["traditional", "others"],
-        "image": "/photo-1603929832681-00d8f727063c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1382&q=80",
-        "featured": false
+        "categories": ["traditional"],
+        "path": "/photo-1603929832681-00d8f727063c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1382&q=80",
+        "featured": false,
+        "textfile": "review-2023"
     },
     {
         "id": "11",
@@ -95,8 +95,9 @@
         "desc": "친구 유명 가수, 일취 월장하며 성장 중",
         "date": "2033-02-11",
         "categories": ["location"],
-        "image": "/photo-1647767444107-8f383924382d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80",
-        "featured": false
+        "path": "/photo-1647767444107-8f383924382d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80",
+        "featured": true,
+        "textfile": "review-2023"
     },
     {
         "id": "12",
@@ -104,8 +105,9 @@
         "desc": "산책 가보자 가보자",
         "date": "2033-02-03",
         "categories": ["location"],
-        "image": "/photo-1596973161156-9d46c08a13bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-        "featured": false
+        "path": "/photo-1596973161156-9d46c08a13bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "featured": false,
+        "textfile": "react18-walkthrough"
     },
     {
         "id": "13",
@@ -113,7 +115,8 @@
         "desc": "달마야 놀자~",
         "date": "2033-03-03",
         "categories": ["location", "traditional"],
-        "image": "/photo-1536221563919-37c841f1f945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-        "featured": false
+        "path": "/photo-1536221563919-37c841f1f945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "featured": false,
+        "textfile": "javascript-basic"
     }
   ]
