@@ -1,34 +1,35 @@
+import AdjeacentPostCard from "@/components/AdjeacentPostCard";
+import PostContent from "@/components/PostContent";
 import { getPostData } from "@/service/posts";
 import Image from "next/image";
-import ReactMarkdown from 'react-markdown';
+import Link from "next/link";
 
 type Props = {
-    params: {
-        slug: string;
-    }
-}
+  params: {
+    slug: string;
+  };
+};
 
-export default async function PostPage({params: {slug}}: Props){
-    const post = await getPostData(slug);
-    return (
-        <>
-            <section className="overflow-hidden rounded-t-2xl w-full h-80 mt-5">
-                <Image
-                    className='bg-center bg-gray-600'
-                    src={`https://images.unsplash.com${post.path}`}
-                    alt={post.title}
-                    width={1232}
-                    height={320}
-                />
-            </section>
-            <section className='flex flex-col p-5 bg-zinc-100'>
-                <time className="self-end">{post.date.toString()}</time>
-                <h2 className="font-extrabold text-3xl mb-2">{post.title}</h2>
-                <p className="font-bold text-lg mb-5">{post.desc}</p>
-                <ReactMarkdown>
-                    {post.content}
-                </ReactMarkdown>
-            </section>
-        </>
-    )
+export default async function PostPage({ params: { slug } }: Props) {
+  const post = await getPostData(slug);
+  const { title, path, prev, next } = post;
+
+  return (
+    <section className="mb-5 overflow-hidden rounded-2xl">
+      <article className="w-full overflow-hidden max-h-80 ">
+        <Image
+          className="bg-gray-600 bg-center"
+          src={`https://images.unsplash.com${path}`}
+          alt={title}
+          width={1250}
+          height={80}
+        />
+      </article>
+      <PostContent post={post} />
+      <article className="flex shadow-md">
+        {prev && <AdjeacentPostCard post={prev} type={"PREV"} />}
+        {next && <AdjeacentPostCard post={next} type={"NEXT"} />}
+      </article>
+    </section>
+  );
 }

@@ -1,6 +1,6 @@
 import PostBoard from "@/app/home/components/PostBoard";
-import Profile from "@/app/home/components/Profile"
 import CarouselBoard from "@/app/home/components/CarouselBoard";
+import Profile from "@/components/Profile";
 
 export default async function Home() {
   return (
@@ -9,5 +9,5 @@ export default async function Home() {
       <PostBoard />
       <CarouselBoard />
     </div>
-  )
+  );
 }
