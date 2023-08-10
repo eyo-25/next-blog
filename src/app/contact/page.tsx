@@ -1,7 +1,11 @@
 import EmailForm from "@/components/EmailForm";
-import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { SiTistory } from "react-icons/si";
+
+export const metadata = {
+  title: "Contact",
+  description: "Eyo에게 연락해주세요",
+};
 
 const LINKS = [
   {

@@ -3,8 +3,9 @@
 import { useInput } from "@/hooks/useInput";
 import { FormEvent, useState } from "react";
 import Banner, { BannerData } from "./Banner";
+import { sendMail } from "@/service/sendMail";
 
-const InputClass = "border-[1.5px] rounded px-16pxr h-45pxr";
+const InputClass = "border-[1.5px] rounded px-16pxr h-45pxr text-black";
 const InputBoxClass = "flex flex-col w-full mb-3";
 
 function EmailForm() {
@@ -15,11 +16,20 @@ function EmailForm() {
   });
   const [banner, setBanner] = useState<BannerData | null>(null);
 
-  const onSubmitHandler = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmitHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log({ email, subject, message });
-    setBanner({ message: "success", state: "SUCCESS" });
-    setTimeout(() => setBanner(null), 3000);
+    try {
+      await sendMail({ from: email, subject, message });
+      setBanner({ message: "메일을 성공적으로 보냈습니다.", state: "SUCCESS" });
+      resetInput();
+    } catch (err) {
+      setBanner({
+        message: "메일전송이 실패했습니다. 다시시도해 주세요",
+        state: "ERROR",
+      });
+    } finally {
+      setTimeout(() => setBanner(null), 3000);
+    }
   };
 
   return (

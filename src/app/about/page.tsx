@@ -1,5 +1,10 @@
 import Profile from "@/components/Profile";
 
+export const metadata = {
+  title: "About",
+  description: "개발자 Eyo를 소개합니다.",
+};
+
 export default function AboutPage() {
   return (
     <article>

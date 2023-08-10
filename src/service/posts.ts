@@ -1,5 +1,6 @@
 import path from "path";
 import { promises as fs } from "fs";
+import { cache } from "react";
 
 export type Post = {
   id: string;
@@ -12,11 +13,11 @@ export type Post = {
   textfile: string;
 };
 
-export async function getPosts(): Promise<Post[]> {
+export const getPosts = cache(async (): Promise<Post[]> => {
   const filePath = path.join(process.cwd(), "data", "posts.json");
   const data = await fs.readFile(filePath, "utf-8");
   return JSON.parse(data);
-}
+});
 
 // &를 통해 Post애 content를 더하여 타입 생성
 export type PostData = Post & {
@@ -27,7 +28,6 @@ export type PostData = Post & {
 
 export async function getPostData(postId: string): Promise<PostData> {
   const posts = await getPosts();
-
   const post = posts.find((post) => post.id === postId);
 
   if (!post) throw new Error(`${postId}가 존재하지 않습니다`);
